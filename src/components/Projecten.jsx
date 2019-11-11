@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import Project from "./Project";
+import Title from "./Title";
 
 class Portfolio extends Component {
   constructor(props) {
@@ -49,21 +50,23 @@ class Portfolio extends Component {
   }
   render() {
     return (
-      <Container className="projecten">
-        <h1 className="pt-4 pb-4">Projecten</h1>
-        <Row>
-          {this.state.projecten.map(data => {
-            return (
-              <Project
-                key={data.id}
-                title={data.title}
-                link={data.link}
-                image={data.image}
-              />
-            );
-          })}
-        </Row>
-      </Container>
+      <React.Fragment>
+        <Title name="Projecten" />
+        <Container className="projecten">
+          <Row>
+            {this.state.projecten.map(data => {
+              return (
+                <Project
+                  key={data.id}
+                  title={data.title}
+                  link={data.link}
+                  image={data.image}
+                />
+              );
+            })}
+          </Row>
+        </Container>
+      </React.Fragment>
     );
   }
 }

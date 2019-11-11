@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { Link as RouterLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
+import Row from "react-bootstrap/Row";
+import Container from "react-bootstrap/Container";
+import Col from "react-bootstrap/Col";
 
 class Title extends Component {
   constructor(props) {
@@ -10,12 +13,15 @@ class Title extends Component {
   }
   render() {
     return (
-      <h1 className="pt-4 pb-4">
-        <RouterLink to="/projecten">
-          <FontAwesomeIcon icon={faChevronLeft} /> 
-        </RouterLink>
-        {this.props.name}
-      </h1>
+      <div className="greyContainer mb-4">
+        <Container>
+          <Row>
+            <Col>
+              <h1 className="pt-4 pb-4">{this.props.name}</h1>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     );
   }
 }

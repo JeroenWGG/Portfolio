@@ -3,7 +3,8 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import Skill from "./Skill";
-import ZoomImg from './ZoomImg';
+import ZoomImg from "./ZoomImg";
+import Title from "./Title";
 
 class Skills extends Component {
   constructor(props) {
@@ -38,57 +39,58 @@ class Skills extends Component {
   }
   render() {
     return (
-      <Container>
-        <Row>
-          <Col>
-            <h1 className="pt-4 pb-4 about">About</h1>
-            <ZoomImg
-          imageWidth={570}
-          imageHeight={292}
-          src="/img/AboutJeroen.png"
-        />
-            <p className="mt-4">Quisque tincidunt mauris iaculis, suscipit tellus sed, porta nisi.
-              Orci varius natoque penatibus et magnis dis parturient montes,
-              nascetur ridiculus mus. Donec at metus tellus. Mauris sed accumsan
-              ex. Orci varius natoque penatibus et magnis dis parturient montes,
-              nascetur ridiculus mus. Nulla consectetur, sapien nec consectetur
-              fermentum, arcu libero suscipit turpis, id pretium leo metus nec
-              turpis. Maecenas elementum metus neque, id commodo risus placerat
-              non. Pellentesque risus sapien, placerat id semper hendrerit,
-              facilisis et mauris. Aenean dolor enim, sagittis et dolor eu,
-              interdum faucibus velit. Vestibulum ante ipsum primis in faucibus
-              orci luctus et ultrices posuere cubilia Curae; Aliquam varius ex
-              at odio commodo, id porttitor dui rhoncus. Curabitur quis
-              scelerisque elit. Cras vehicula augue vel turpis varius, sit amet
-              tincidunt lacus eleifend. Aliquam ut nisl tortor. Vivamus non
-              tortor tempus, vehicula velit eget, dignissim dui. Aenean dolor enim, sagittis et dolor eu,
-              interdum faucibus velit. Vestibulum ante ipsum primis in faucibus
-              orci luctus et ultrices posuere cubilia Curae; Aliquam varius ex
-              at odio commodo, id porttitor dui rhoncus. Curabitur quis
-              scelerisque elit. Cras vehicula augue vel turpis varius, sit amet
-              tincidunt lacus eleifend. Aliquam ut nisl tortor. Vivamus non
-              tortor tempus, vehicula velit eget, dignissim dui. Aenean dolor enim, sagittis et dolor eu,
-              interdum faucibus velit. Vestibulum ante ipsum primis in faucibus
-              orci luctus et ultrices posuere cubilia Curae; Aliquam varius ex
-              at odio commodo, id porttitor dui rhoncus. Curabitur quis
-              scelerisque elit. Cras vehicula augue vel turpis varius, sit amet
-              tincidunt lacus eleifend. Aliquam ut nisl tortor. Vivamus non
-              tortor tempus, vehicula velit eget, dignissim dui.</p>
-          </Col>
-          <Col>
-            <h1 className="pt-4 pb-4">Skills</h1>
-            {this.state.skills.map(data => {
-              return (
-                <Skill
-                  key={data.id}
-                  number={data.number}
-                  name={data.name}
-                ></Skill>
-              );
-            })}
-          </Col>
-        </Row>
-      </Container>
+      <React.Fragment>
+        <Title name="Over mij"></Title>
+        <Container className="luxy">
+          <Row className="luxy-el" data-speed-y="5" data-offset="-50">
+            <Col>
+              <ZoomImg src="/img/AboutJeroen.png" />
+              <p className="mt-4">
+                Quisque tincidunt mauris iaculis, suscipit tellus sed, porta
+                nisi. Orci varius natoque penatibus et magnis dis parturient
+                montes, nascetur ridiculus mus. Donec at metus tellus. Mauris
+                sed accumsan ex. Orci varius natoque penatibus et magnis dis
+                parturient montes, nascetur ridiculus mus. Nulla consectetur,
+                sapien nec consectetur fermentum, arcu libero suscipit turpis,
+                id pretium leo metus nec turpis. Maecenas elementum metus neque,
+                id commodo risus placerat non. Pellentesque risus sapien,
+                placerat id semper hendrerit, facilisis et mauris. Aenean dolor
+                enim, sagittis et dolor eu, interdum faucibus velit. Vestibulum
+                ante ipsum primis in faucibus orci luctus et ultrices posuere
+                cubilia Curae; Aliquam varius ex at odio commodo, id porttitor
+                dui rhoncus. Curabitur quis scelerisque elit. Cras vehicula
+                augue vel turpis varius, sit amet tincidunt lacus eleifend.
+                Aliquam ut nisl tortor. Vivamus non tortor tempus, vehicula
+                velit eget, dignissim dui. Aenean dolor enim, sagittis et dolor
+                eu, interdum faucibus velit. Vestibulum ante ipsum primis in
+                faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam
+                varius ex at odio commodo, id porttitor dui rhoncus. Curabitur
+                quis scelerisque elit. Cras vehicula augue vel turpis varius,
+                sit amet tincidunt lacus eleifend. Aliquam ut nisl tortor.
+                Vivamus non tortor tempus, vehicula velit eget, dignissim dui.
+                Aenean dolor enim, sagittis et dolor eu, interdum faucibus
+                velit. Vestibulum ante ipsum primis in faucibus orci luctus et
+                ultrices posuere cubilia Curae; Aliquam varius ex at odio
+                commodo, id porttitor dui rhoncus. Curabitur quis scelerisque
+                elit. Cras vehicula augue vel turpis varius, sit amet tincidunt
+                lacus eleifend. Aliquam ut nisl tortor. Vivamus non tortor
+                tempus, vehicula velit eget, dignissim dui.
+              </p>
+            </Col>
+            <Col>
+              {this.state.skills.map(data => {
+                return (
+                  <Skill
+                    key={data.id}
+                    number={data.number}
+                    name={data.name}
+                  ></Skill>
+                );
+              })}
+            </Col>
+          </Row>
+        </Container>
+      </React.Fragment>
     );
   }
 }

@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 
-p{
+p {
   font-family: "Raleway", sans-serif !important;
 }
-
 
 /* NAVBAR */
 
@@ -42,12 +41,47 @@ p{
       rgba(0, 178, 133, 0.7)
     ),
     url(../img/banner.jpg);
-
-  background-size: cover;
+  -webkit-animation: gradientBG 30s ease infinite;
+  -moz-animation: gradientBG 30s ease infinite;
+  animation: gradientBG 30s ease infinite;
   height: calc(100vh - 63px);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@-webkit-keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .header h2 {
@@ -59,14 +93,14 @@ p{
   color: #fff;
 }
 
-.profile{
+.profile {
   box-shadow: 3px 3px 3px rgba(28, 28, 28, 0.2);
   border-radius: 10px;
   margin-bottom: 1rem;
   width: 150px;
 }
 
-.smaller{
+.smaller {
   box-shadow: 3px 3px 3px rgba(28, 28, 28, 0.2);
   border-bottom: #00b285 10px solid;
   border-radius: 10px;
@@ -110,32 +144,32 @@ p{
   top: 100%;
 }
 
-.projecten h1 a{
+.projecten h1 a {
   font-size: 32px;
-  padding-right:15px;
-  color:#1c1c1c;
+  padding-right: 15px;
+  color: #1c1c1c;
   transition: ease-in-out 0.2s;
 }
 
-.projecten h1 a:hover{
+.projecten h1 a:hover {
   text-decoration: none;
   color: #00b285;
   transition: ease-in-out 0.2s;
 }
 
-.imageStyle img{
+.imageStyle img {
   box-shadow: 3px 3px 3px rgba(28, 28, 28, 0.2);
   border-bottom: #00b285 10px solid;
 }
 
 /* ABOUT */
 
-.progress{
+.progress {
   height: 2rem;
   margin-bottom: 15px;
 }
 
-.progress-bar{
+.progress-bar {
   font-family: "Raleway", sans-serif !important;
   font-weight: bold;
   font-size: 16px;
@@ -169,26 +203,42 @@ p{
   z-index: 9000;
 }
 
-
 /* Footer */
 
-.footer{
-  color:#fff;
+.footer {
+  color: #fff;
   font-family: "Raleway", sans-serif !important;
 }
 
-.footerWrapper{
+.footerWrapper {
   border-top: 3px solid #00b285;
   background-color: #1c1c1c;
   flex-shrink: 0;
 }
 
-
-.html, body {
+.html,
+body {
   height: 100%;
 }
 
-body{
-  display:flex;
+body {
+  display: flex;
   flex-direction: column;
+}
+
+/* CONTACT */
+
+.btn-primary {
+  background-color: #00b285;
+  border: #00b285;
+}
+
+.btn-primary:hover {
+  background-color: rgba(0, 178, 133, 0.8);
+}
+
+.contactImage {
+  width: 100%;
+  max-width: 450px;
+  float: right;
 }

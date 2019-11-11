@@ -2,33 +2,32 @@ import React, { Component } from "react";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
 import Title from "./Title";
-import ZoomImg from './ZoomImg';
+import ZoomImg from "./ZoomImg";
 
 class Project6 extends Component {
   constructor(props) {
     super(props);
-    this.state = {            projectImages: [
-      {
-        id: 0,
-        src: "https://picsum.photos/1110/700"
-      },
-      {
-        id: 1,
-        src: "https://picsum.photos/1110/700"
-      }
-    ]
-  };
-}
+    this.state = {
+      projectImages: [
+        {
+          id: 0,
+          src: "https://picsum.photos/1110/700"
+        },
+        {
+          id: 1,
+          src: "https://picsum.photos/1110/700"
+        }
+      ]
+    };
+  }
   render() {
-    return ( <Container className="projecten">
-    <Title name="Project 6"></Title>
-    <Row>
-    <Col xs={12} lg={6} xl={6} className="mb-4 imageStyle">
-            <ZoomImg
-          src={this.state.projectImages[0].src}
-        />
+    return (
+      <Container className="projecten">
+        <Title name="Project 6"></Title>
+        <Row>
+          <Col xs={12} lg={6} xl={6} className="mb-4 imageStyle">
+            <ZoomImg src={this.state.projectImages[0].src} />
           </Col>
           <Col xs={12} lg={6} xl={6} className="mb-4">
             <p>
@@ -71,12 +70,11 @@ class Project6 extends Component {
             </p>
           </Col>
           <Col xs={12} lg={6} xl={6} className="mb-4 imageStyle">
-          <ZoomImg
-          src={this.state.projectImages[1].src}
-        />
+            <ZoomImg src={this.state.projectImages[1].src} />
           </Col>
         </Row>
-  </Container>);
+      </Container>
+    );
   }
 }
 

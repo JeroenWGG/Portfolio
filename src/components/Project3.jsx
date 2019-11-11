@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
 import Title from "./Title";
 import ZoomImg from './ZoomImg';
 

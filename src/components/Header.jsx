@@ -10,9 +10,8 @@ class Header extends Component {
     super(props);
     this.state = {
       picture: "img/jeroens.png",
-      title: "My name is Jeroen Wiersma",
-      subtitle:
-        "My passion is front-end development, UX design and Conversion Rate Optimization"
+      title: "Ik ben Jeroen Wiersma",
+      subtitle: "Mijn passie is front-end development, UX design en CRO"
     };
   }
 
@@ -25,8 +24,8 @@ class Header extends Component {
               <h2>{this.state.title}</h2>
               <h3>{this.state.subtitle}</h3>
               <RouterLink to="/projecten">
-                <Button variant="outline-light" className="m-2">
-                  <strong>MY WORK</strong>
+                <Button variant="outline-light" className="m-2" size="lg">
+                  <strong>MIJN WERK</strong>
                 </Button>
               </RouterLink>
             </Col>

@@ -23,7 +23,7 @@ class Skills extends Component {
           name: "Over mij"
         }
       ],
-      skills: [
+      development: [
         { id: 0, name: "HTML", number: "100" },
         { id: 1, name: "CSS", number: "100" },
         { id: 2, name: "jQuery", number: "75" },
@@ -33,7 +33,16 @@ class Skills extends Component {
         { id: 6, name: "Prettier", number: "100" },
         { id: 7, name: "ReactJS", number: "50" },
         { id: 8, name: "Git", number: "75" },
-        { id: 9, name: "Wordpress", number: "75" },
+        { id: 9, name: "Wordpress", number: "75" }
+      ],
+      design: [
+        { id: 10, name: "Adobe Indesign", number: "75" },
+        { id: 11, name: "Adobe Illustrator", number: "75" },
+        { id: 12, name: "Adobe Photoshop", number: "75" },
+        { id: 13, name: "Adobe After Effects", number: "75" },
+        { id: 14, name: "Design Thinking", number: "75" }
+      ],
+      marketing: [
         { id: 10, name: "Adobe Indesign", number: "75" },
         { id: 11, name: "Adobe Illustrator", number: "75" },
         { id: 12, name: "Adobe Photoshop", number: "75" },
@@ -44,7 +53,9 @@ class Skills extends Component {
         { id: 17, name: "Google Optimize", number: "100" },
         { id: 18, name: "Google Spreadsheets", number: "100" },
         { id: 19, name: "Google Docs", number: "100" },
-        { id: 20, name: "Google Slides", number: "100" },
+        { id: 20, name: "Google Slides", number: "100" }
+      ],
+      talen: [
         { id: 21, name: "Nederlands", number: "100" },
         { id: 22, name: "Engels", number: "75" }
       ]
@@ -92,12 +103,46 @@ class Skills extends Component {
               </p>
             </Col>
             <Col>
-              {this.state.skills.map(data => {
+              <h2 className="pb-4">Development</h2>
+              {this.state.development.map(data => {
                 return (
                   <Skill
                     key={data.id}
                     number={data.number}
                     name={data.name}
+                  ></Skill>
+                );
+              })}
+              <h2 className="pb-4">Design</h2>
+              {this.state.design.map(data => {
+                return (
+                  <Skill
+                    key={data.id}
+                    number={data.number}
+                    name={data.name}
+                    variant="primary"
+                  ></Skill>
+                );
+              })}
+              <h2 className="pb-4">Marketing</h2>
+              {this.state.marketing.map(data => {
+                return (
+                  <Skill
+                    key={data.id}
+                    number={data.number}
+                    name={data.name}
+                    variant="warning"
+                  ></Skill>
+                );
+              })}
+              <h2 className="pb-4">Talen</h2>
+              {this.state.talen.map(data => {
+                return (
+                  <Skill
+                    key={data.id}
+                    number={data.number}
+                    name={data.name}
+                    variant="danger"
                   ></Skill>
                 );
               })}

@@ -16,7 +16,7 @@ class Navigation extends Component {
     return (
       <Navbar collapseOnSelect expand="lg" variant="dark" sticky="top">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand>
             <img
               src="\img\brand.png"
               width="30"

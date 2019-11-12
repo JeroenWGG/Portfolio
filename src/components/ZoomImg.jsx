@@ -1,13 +1,13 @@
-import React from 'react';
-import posed from 'react-pose';
+import React from "react";
+import posed from "react-pose";
 
 const Frame = posed.div({
   init: {
-    applyAtEnd: { display: 'none' },
+    applyAtEnd: { display: "none" },
     opacity: 0
   },
   zoom: {
-    applyAtStart: { display: 'block' },
+    applyAtStart: { display: "block" },
     opacity: 1
   }
 });
@@ -19,14 +19,14 @@ const transition = {
 
 const Image = posed.img({
   init: {
-    position: 'static',
-    width: 'auto',
-    height: 'auto',
+    position: "static",
+    width: "auto",
+    height: "auto",
     transition,
     flip: true
   },
   zoom: {
-    position: 'fixed',
+    position: "fixed",
     top: 0,
     left: 0,
     right: 0,
@@ -40,12 +40,12 @@ class ZoomImg extends React.Component {
   state = { isZoomed: false };
 
   zoomIn() {
-    window.addEventListener('scroll', this.zoomOut);
+    window.addEventListener("scroll", this.zoomOut);
     this.setState({ isZoomed: true });
   }
 
   zoomOut = () => {
-    window.removeEventListener('scroll', this.zoomOut);
+    window.removeEventListener("scroll", this.zoomOut);
     this.setState({ isZoomed: false });
   };
 
@@ -54,7 +54,7 @@ class ZoomImg extends React.Component {
   render() {
     const { isZoomed } = this.state;
     const { imageWidth, imageHeight, ...props } = this.props;
-    const pose = isZoomed ? 'zoom' : 'init';
+    const pose = isZoomed ? "zoom" : "init";
 
     return (
       <div

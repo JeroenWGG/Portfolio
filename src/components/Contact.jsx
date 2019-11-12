@@ -6,16 +6,31 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 import Title from "./Title";
+import Breadcrumbs from "./Breadcrumbs";
 
 class Contact extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      breadcrumbs: [
+        {
+          id: 0,
+          link: "/",
+          name: "Home"
+        },
+        {
+          id: 1,
+          link: "/contact",
+          name: "Contact"
+        }
+      ]
+    };
   }
 
   render() {
     return (
-      <React.Fragment>
+      <div className="react-transition fade-in">
+        <Breadcrumbs data={this.state.breadcrumbs} />
         <Title name="Contact" />
         <Container>
           <Row>
@@ -64,7 +79,7 @@ class Contact extends Component {
                     />
                   </Form.Group>
                   <Button variant="primary" type="submit" size="lg" block>
-                    Submit
+                    Bericht versturen
                   </Button>
                 </Form>
               </Col>
@@ -74,7 +89,7 @@ class Contact extends Component {
             </Row>
           </Container>
         </div>
-      </React.Fragment>
+      </div>
     );
   }
 }

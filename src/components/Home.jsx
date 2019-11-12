@@ -8,9 +8,9 @@ class Home extends Component {
   }
   render() {
     return (
-      <React.Fragment>
+      <div className="react-transition fade-in">
         <Header />
-      </React.Fragment>
+      </div>
     );
   }
 }

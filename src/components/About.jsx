@@ -5,11 +5,24 @@ import Container from "react-bootstrap/Container";
 import Skill from "./Skill";
 import ZoomImg from "./ZoomImg";
 import Title from "./Title";
+import Breadcrumbs from "./Breadcrumbs";
 
 class Skills extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      breadcrumbs: [
+        {
+          id: 0,
+          link: "/",
+          name: "Home"
+        },
+        {
+          id: 1,
+          link: "about",
+          name: "Over mij"
+        }
+      ],
       skills: [
         { id: 0, name: "HTML", number: "100" },
         { id: 1, name: "CSS", number: "100" },
@@ -39,10 +52,11 @@ class Skills extends Component {
   }
   render() {
     return (
-      <React.Fragment>
+      <div className="react-transition fade-in">
+        <Breadcrumbs data={this.state.breadcrumbs} />
         <Title name="Over mij"></Title>
-        <Container className="luxy">
-          <Row className="luxy-el" data-speed-y="5" data-offset="-50">
+        <Container>
+          <Row>
             <Col>
               <ZoomImg src="/img/AboutJeroen.png" />
               <p className="mt-4">
@@ -90,7 +104,7 @@ class Skills extends Component {
             </Col>
           </Row>
         </Container>
-      </React.Fragment>
+      </div>
     );
   }
 }

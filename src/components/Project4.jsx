@@ -4,11 +4,29 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Title from "./Title";
 import ZoomImg from "./ZoomImg";
+import Breadcrumbs from "./Breadcrumbs";
 
 class Project4 extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      breadcrumbs: [
+        {
+          id: 0,
+          link: "/",
+          name: "Home"
+        },
+        {
+          id: 1,
+          link: "projecten",
+          name: "Projecten"
+        },
+        {
+          id: 2,
+          link: "/project4",
+          name: "Project 4"
+        }
+      ],
       projectImages: [
         {
           id: 0,
@@ -23,8 +41,9 @@ class Project4 extends Component {
   }
   render() {
     return (
-      <React.Fragment>
+      <div className="react-transition fade-in">
         <Title name="Project 4"></Title>
+        <Breadcrumbs data={this.state.breadcrumbs} />
         <Container className="projecten">
           <Row>
             <Col xs={12} lg={6} xl={6} className="mb-4 imageStyle">
@@ -77,7 +96,7 @@ class Project4 extends Component {
             </Col>
           </Row>
         </Container>
-      </React.Fragment>
+      </div>
     );
   }
 }

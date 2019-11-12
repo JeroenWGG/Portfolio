@@ -3,11 +3,24 @@ import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import Project from "./Project";
 import Title from "./Title";
+import Breadcrumbs from "./Breadcrumbs";
 
 class Portfolio extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      breadcrumbs: [
+        {
+          id: 0,
+          link: "/",
+          name: "Home"
+        },
+        {
+          id: 1,
+          link: "projecten",
+          name: "Projecten"
+        }
+      ],
       projecten: [
         {
           id: 0,
@@ -50,7 +63,8 @@ class Portfolio extends Component {
   }
   render() {
     return (
-      <React.Fragment>
+      <div className="react-transition fade-in">
+        <Breadcrumbs data={this.state.breadcrumbs} />
         <Title name="Projecten" />
         <Container className="projecten">
           <Row>
@@ -66,7 +80,7 @@ class Portfolio extends Component {
             })}
           </Row>
         </Container>
-      </React.Fragment>
+      </div>
     );
   }
 }

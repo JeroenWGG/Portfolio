@@ -53,6 +53,36 @@ p {
   justify-content: center;
 }
 
+/* BREADCRUMS */
+
+.breadcrumbs {
+  font-family: "Raleway", sans-serif;
+  padding: 1rem 0.5rem;
+  display: inline-block;
+  color: #1c1c1c;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.breadcrumbs:hover {
+  text-decoration: none;
+  color: #00b285;
+}
+
+.breadcrumbs:after {
+  padding-left: 1rem;
+  content: "<";
+  color: #1c1c1c;
+}
+
+.breadcrumbs:after:hover {
+  text-decoration: none;
+}
+
+.breadcrumbs:last-child:after {
+  content: "";
+}
+
 /* ANIMATION */
 
 @-webkit-keyframes gradientBG {

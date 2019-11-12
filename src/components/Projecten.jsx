@@ -24,39 +24,39 @@ class Portfolio extends Component {
       projecten: [
         {
           id: 0,
-          title: "Project 1",
+          title: "Datatrics implementatie",
           link: "/project1",
-          image: "https://picsum.photos/350"
+          image: "img/datatrics.png"
         },
         {
           id: 1,
-          title: "Project 2",
+          title: "Tweakwise implementatie",
           link: "/project2",
-          image: "https://picsum.photos/350"
+          image: "img/tweakwise.png"
         },
         {
           id: 2,
-          title: "Project 3",
+          title: "Redesign productdetailpagina",
           link: "/project3",
-          image: "https://picsum.photos/350"
+          image: "img/pdp.png"
         },
         {
           id: 3,
-          title: "Project 4",
+          title: "Pitlo interieur renovatie",
           link: "/project4",
-          image: "https://picsum.photos/350"
+          image: "img/renovatie.png"
         },
         {
           id: 4,
-          title: "Project 5",
+          title: "Redesign bedankpagina",
           link: "/project5",
-          image: "https://picsum.photos/350"
+          image: "img/bedankpagina.png"
         },
         {
           id: 5,
-          title: "Project 6",
+          title: "Whiteboard animatie",
           link: "/project6",
-          image: "https://picsum.photos/350"
+          image: "img/animatie.png"
         }
       ]
     };

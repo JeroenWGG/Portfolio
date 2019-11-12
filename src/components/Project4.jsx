@@ -42,8 +42,8 @@ class Project4 extends Component {
   render() {
     return (
       <div className="react-transition fade-in">
-        <Title name="Project 4"></Title>
         <Breadcrumbs data={this.state.breadcrumbs} />
+        <Title name="Project 4"></Title>
         <Container className="projecten">
           <Row>
             <Col xs={12} lg={6} xl={6} className="mb-4 imageStyle">

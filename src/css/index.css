@@ -241,19 +241,35 @@ p {
 }
 
 .development {
-  background-color: #dc3545;
-}
-
-.marketing {
-  background-color: #fd7e14;
+  background-color: #00b285;
+  border-bottom: 5px rgba(28, 28, 28, 0.4) solid;
+  color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px rgba(28, 28, 28, 0.2);
 }
 
 .design {
-  background-color: #ffc107;
+  background-color: #007bff;
+  border-bottom: 5px rgba(28, 28, 28, 0.4) solid;
+  color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px rgba(28, 28, 28, 0.2);
+}
+
+.marketing {
+  background-color: #ffc107 !important;
+  border-bottom: 5px rgba(28, 28, 28, 0.4) solid;
+  color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px rgba(28, 28, 28, 0.2);
 }
 
 .talen {
-  background-color: #007bff;
+  background-color: #dc3545;
+  border-bottom: 5px rgba(28, 28, 28, 0.4) solid;
+  color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px rgba(28, 28, 28, 0.2);
 }
 
 /* Footer */

@@ -43,13 +43,39 @@ class Project1 extends Component {
     return (
       <div className="react-transition fade-in">
         <Breadcrumbs data={this.state.breadcrumbs} />
-        <Title name="Project 1"></Title>
+        <Title name="Datatrics implementatie"></Title>
         <Container className="projecten">
           <Row>
-            <Col xs={12} lg={6} xl={6} className="mb-4 imageStyle">
+            <Col xs={12} className="mb-4">
+              <h2>Wat heb ik gedaan?</h2>
+              <p>
+                Datatrics is een personalisatie platform voor e-commerce
+                websites. Dit personalisatie platform heb ik samen met het
+                marketingteam gekoppeld aan de webshop Plein.nl. Door deze
+                koppeling verzamelden wij gegevens van alle klanten die op de
+                website kwamen mits zij natuurlijk toestemming gaven. Met deze
+                data kon ik in de tool mensen relevante embedded content en
+                notificaties sturen die hebben gezorgd voor een conversie
+                stijging van <b>250.000 euro</b> per jaar. Dit project is
+                genomineerd voor beste conversie optimalisatie project van 2019
+                bij de{" "}
+                <a href="https://dutchsearchawards.nl/">Dutch Search Awards</a>.
+                De klanten werden binnen de tool in klantfases onderverdeeld en
+                voor elke fase kon ik actiemechanismen aanmaken. De vier
+                verschillende fases waren: Oriëntatiefase, vergelijkfase,
+                besluitfase en evaluatiefase.
+              </p>
+            </Col>
+            <Col className="mb-4 imageStyle">
               <ZoomImg src={this.state.projectImages[0].src} />
             </Col>
+          </Row>
+          <Row>
+            <Col xs={12} lg={6} xl={6} className="mb-4 imageStyle">
+              <ZoomImg src={this.state.projectImages[1].src} />
+            </Col>
             <Col xs={12} lg={6} xl={6} className="mb-4">
+              <h2>Wat heb ik ervan geleerd?</h2>
               <p>
                 Quisque tincidunt mauris iaculis, suscipit tellus sed, porta
                 nisi. Orci varius natoque penatibus et magnis dis parturient
@@ -72,6 +98,7 @@ class Project1 extends Component {
           </Row>
           <Row>
             <Col xs={12} lg={6} xl={6} className="mb-4">
+              <h2>Welke vaardigheden heb ik gebruikt?</h2>
               <p>
                 Quisque tincidunt mauris iaculis, suscipit tellus sed, porta
                 nisi. Orci varius natoque penatibus et magnis dis parturient

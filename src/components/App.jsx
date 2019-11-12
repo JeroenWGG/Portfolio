@@ -13,7 +13,6 @@ import Project5 from "./Project5";
 import Project6 from "./Project6";
 import ScrollToTop from "./ScrollToTop";
 import Footer from "./Footer";
-import luxy from "luxy.js";
 
 class App extends Component {
   render() {
@@ -21,6 +20,8 @@ class App extends Component {
       <Router>
         <ScrollToTop />
         <Navigation />
+        <Route render={(location) => {
+          return (
         <Switch>
           <Route path="/contact" component={Contact} />
           <Route path="/projecten" component={Projecten} />
@@ -33,6 +34,7 @@ class App extends Component {
           <Route path="/project5" component={Project5} />
           <Route path="/project6" component={Project6} />
         </Switch>
+        )}
         <Footer />
       </Router>
     );

@@ -49,21 +49,8 @@ class Project1 extends Component {
             <Col xs={12} className="mb-4">
               <h2>Wat heb ik gedaan?</h2>
               <p>
-                Datatrics is een personalisatie platform voor e-commerce
-                websites. Dit personalisatie platform heb ik samen met het
-                marketingteam gekoppeld aan de webshop Plein.nl. Door deze
-                koppeling verzamelden wij gegevens van alle klanten die op de
-                website kwamen mits zij natuurlijk toestemming gaven. Met deze
-                data kon ik in de tool mensen relevante embedded content en
-                notificaties sturen die hebben gezorgd voor een conversie
-                stijging van <b>250.000 euro</b> per jaar. Dit project is
-                genomineerd voor beste conversie optimalisatie project van 2019
-                bij de{" "}
-                <a href="https://dutchsearchawards.nl/">Dutch Search Awards</a>.
-                De klanten werden binnen de tool in klantfases onderverdeeld en
-                voor elke fase kon ik actiemechanismen aanmaken. De vier
-                verschillende fases waren: Oriëntatiefase, vergelijkfase,
-                besluitfase en evaluatiefase.
+                Ik heb samen met het marketingteam het personalisatie platform Datatrics geimplementeerd op de website Plein. 
+                Doormiddel van JavaScript, CSS & HTML kon ik persoonlijke touchpoints generen op basis van klantdata.
               </p>
             </Col>
             <Col className="mb-4 imageStyle">

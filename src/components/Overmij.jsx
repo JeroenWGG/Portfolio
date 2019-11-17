@@ -71,27 +71,40 @@ class Skills extends Component {
             <Col xs={12} sm={6}>
               <ZoomImg src="/img/AboutJeroen.png" />
               <p className="mt-4">
-                Sinds ik ben afgestudeerd aan de opleiding Digitale media &
-                communicatie ben ik werkzaam als Junior Conversie Manager bij
-                een van de top 100 webshops van Nederland: plein.nl. Ik werk
-                hier nauw samen met de IT-afdeling, omdat ik ook een technische
-                achtergrond heb. Ik maak namelijk al sinds jongs af aan
-                websites, als hobby maar ook voor kleine ondernemers. Ik heb
-                hier ook cursussen over gevolgd tijdens mijn opleiding. Tijdens
-                een gesprek met een van de Developers bij Plein.nl werd mijn
-                interesse om Front-end Developer te worden weer aangewakkerd. Ik
-                vind het ontzettend gaaf om te zien hoe ik mij op dit gebied nog
-                kan ontwikkelen.
+                Quisque tincidunt mauris iaculis, suscipit tellus sed, porta
+                nisi. Orci varius natoque penatibus et magnis dis parturient
+                montes, nascetur ridiculus mus. Donec at metus tellus. Mauris
+                sed accumsan ex. Orci varius natoque penatibus et magnis dis
+                parturient montes, nascetur ridiculus mus. Nulla consectetur,
+                sapien nec consectetur fermentum, arcu libero suscipit turpis,
+                id pretium leo metus nec turpis. Maecenas elementum metus neque,
+                id commodo risus placerat non. Pellentesque risus sapien,
+                placerat id semper hendrerit, facilisis et mauris. Aenean dolor
+                enim, sagittis et dolor eu, interdum faucibus velit. Vestibulum
+                ante ipsum primis in faucibus orci luctus et ultrices posuere
+                cubilia Curae; Aliquam varius ex at odio commodo, id porttitor
+                dui rhoncus. Curabitur quis scelerisque elit. Cras vehicula
+                augue vel turpis varius, sit amet tincidunt lacus eleifend.
+                Aliquam ut nisl tortor. Vivamus non tortor tempus, vehicula
+                velit eget, dignissim dui.
               </p>
               <p className="mt-4">
-                Ik heb altijd aan projecten gewerkt waardoor ik gewend ben om
-                snel oplossingen te verzinnen voor problemen. Ik heb veel kennis
-                van HTML5, CSS & Javascript en heb ook nog ervaring met
-                aanvullende technologieën. Tevens heb ik ervaring met het
-                schrijven van responsive websites. Ik gebruik zelf Github voor
-                persoonlijke projecten, maar dit heb ik nog niet gebruikt in
-                teamverband. Ook heb ik een beetje ervaring met het ReactJS
-                framework.
+                Quisque tincidunt mauris iaculis, suscipit tellus sed, porta
+                nisi. Orci varius natoque penatibus et magnis dis parturient
+                montes, nascetur ridiculus mus. Donec at metus tellus. Mauris
+                sed accumsan ex. Orci varius natoque penatibus et magnis dis
+                parturient montes, nascetur ridiculus mus. Nulla consectetur,
+                sapien nec consectetur fermentum, arcu libero suscipit turpis,
+                id pretium leo metus nec turpis. Maecenas elementum metus neque,
+                id commodo risus placerat non. Pellentesque risus sapien,
+                placerat id semper hendrerit, facilisis et mauris. Aenean dolor
+                enim, sagittis et dolor eu, interdum faucibus velit. Vestibulum
+                ante ipsum primis in faucibus orci luctus et ultrices posuere
+                cubilia Curae; Aliquam varius ex at odio commodo, id porttitor
+                dui rhoncus. Curabitur quis scelerisque elit. Cras vehicula
+                augue vel turpis varius, sit amet tincidunt lacus eleifend.
+                Aliquam ut nisl tortor. Vivamus non tortor tempus, vehicula
+                velit eget, dignissim dui.
               </p>
             </Col>
             <Col xs={12} sm={6}>

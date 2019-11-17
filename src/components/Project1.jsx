@@ -49,21 +49,22 @@ class Project1 extends Component {
             <Col xs={12} className="mb-4">
               <h2>Wat heb ik gedaan?</h2>
               <p>
-                Datatrics is een personalisatie platform voor e-commerce
-                websites. Dit personalisatie platform heb ik samen met het
-                marketingteam gekoppeld aan de webshop Plein.nl. Door deze
-                koppeling verzamelden wij gegevens van alle klanten die op de
-                website kwamen mits zij natuurlijk toestemming gaven. Met deze
-                data kon ik in de tool mensen relevante embedded content en
-                notificaties sturen die hebben gezorgd voor een conversie
-                stijging van <b>250.000 euro</b> per jaar. Dit project is
-                genomineerd voor beste conversie optimalisatie project van 2019
-                bij de{" "}
-                <a href="https://dutchsearchawards.nl/">Dutch Search Awards</a>.
-                De klanten werden binnen de tool in klantfases onderverdeeld en
-                voor elke fase kon ik actiemechanismen aanmaken. De vier
-                verschillende fases waren: Oriëntatiefase, vergelijkfase,
-                besluitfase en evaluatiefase.
+                Quisque tincidunt mauris iaculis, suscipit tellus sed, porta
+                nisi. Orci varius natoque penatibus et magnis dis parturient
+                montes, nascetur ridiculus mus. Donec at metus tellus. Mauris
+                sed accumsan ex. Orci varius natoque penatibus et magnis dis
+                parturient montes, nascetur ridiculus mus. Nulla consectetur,
+                sapien nec consectetur fermentum, arcu libero suscipit turpis,
+                id pretium leo metus nec turpis. Maecenas elementum metus neque,
+                id commodo risus placerat non. Pellentesque risus sapien,
+                placerat id semper hendrerit, facilisis et mauris. Aenean dolor
+                enim, sagittis et dolor eu, interdum faucibus velit. Vestibulum
+                ante ipsum primis in faucibus orci luctus et ultrices posuere
+                cubilia Curae; Aliquam varius ex at odio commodo, id porttitor
+                dui rhoncus. Curabitur quis scelerisque elit. Cras vehicula
+                augue vel turpis varius, sit amet tincidunt lacus eleifend.
+                Aliquam ut nisl tortor. Vivamus non tortor tempus, vehicula
+                velit eget, dignissim dui.
               </p>
             </Col>
             <Col className="mb-4 imageStyle">

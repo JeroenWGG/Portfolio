@@ -6,12 +6,15 @@ p {
 
 /* NAVBAR */
 
+#responsive-navbar-nav:not(.collapsing):not(.show) {
+  height: auto !important;
+}
+
 .navbar {
   border-bottom: #00b285 3px solid;
   background-color: #1c1c1c;
   color: #ffffff;
   font-family: "Raleway", sans-serif !important;
-  font-size: 1.2rem;
 }
 
 .navbar-dark .navbar-nav .nav-link {

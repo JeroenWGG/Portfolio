@@ -13,7 +13,7 @@ class Navigation extends Component {
   }
   render() {
     return (
-      <Navbar collapseOnSelect expand="lg" variant="dark" sticky="top">
+      <Navbar expand="lg" variant="dark" fixed="top">
         <Container>
           <RouterLink to="/">
             <Navbar.Brand>

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/container";
@@ -6,15 +6,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link as RouterLink } from "react-router-dom";
 
-class Navigation extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  render() {
-    return (
-      <Navbar collapseOnSelect expand="lg" variant="dark" fixed="top">
+function Navigation() {
+  const [expanded, setExpanded] = useState(false);
+  return (
+    <Navbar expanded={expanded} expand="lg" variant="dark" fixed="top">
+      <Container>
         <RouterLink to="/">
           <Navbar.Brand>
             <img
@@ -26,29 +22,59 @@ class Navigation extends Component {
             />
           </Navbar.Brand>
         </RouterLink>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav">
+        <Navbar.Toggle
+          onClick={() => setExpanded(expanded ? false : "expanded")}
+          aria-controls="responsive-navbar-nav"
+        >
           <FontAwesomeIcon icon={faBars} />
         </Navbar.Toggle>
-        <Navbar.Collapse id="responsive-navbar-nav">
+        <Navbar.Collapse id="">
           <Nav className="mr-auto">
-            <Nav.Link href="#features">Features</Nav.Link>
-            <RouterLink className="nav-link" role="button" to="/">
-              Home
-            </RouterLink>
-            <RouterLink className="nav-link" role="button" to="/projecten">
-              Projecten
-            </RouterLink>
-            <RouterLink className="nav-link" role="button" to="/overmij">
-              Over mij
-            </RouterLink>
-            <RouterLink className="nav-link" role="button" to="/contact">
-              Contact
-            </RouterLink>
+            <Nav.Item>
+              <RouterLink
+                onClick={() => setExpanded(false)}
+                className="nav-link"
+                role="button"
+                to="/"
+              >
+                Home
+              </RouterLink>
+            </Nav.Item>
+            <Nav.Item>
+              <RouterLink
+                onClick={() => setExpanded(false)}
+                className="nav-link"
+                role="button"
+                to="/projecten"
+              >
+                Projecten
+              </RouterLink>
+            </Nav.Item>
+            <Nav.Item>
+              <RouterLink
+                onClick={() => setExpanded(false)}
+                className="nav-link"
+                role="button"
+                to="/overmij"
+              >
+                Over mij
+              </RouterLink>
+            </Nav.Item>
+            <Nav.Item>
+              <RouterLink
+                onClick={() => setExpanded(false)}
+                className="nav-link"
+                role="button"
+                to="/contact"
+              >
+                Contact
+              </RouterLink>
+            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
-      </Navbar>
-    );
-  }
+      </Container>
+    </Navbar>
+  );
 }
 
 export default Navigation;

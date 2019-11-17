@@ -178,6 +178,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 350px;
 }
 
 .item-overlay.top {

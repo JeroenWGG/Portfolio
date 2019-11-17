@@ -19,7 +19,7 @@ class Skills extends Component {
         },
         {
           id: 1,
-          link: "about",
+          link: "overmij",
           name: "Over mij"
         }
       ],

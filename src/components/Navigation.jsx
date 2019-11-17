@@ -11,41 +11,41 @@ class Navigation extends Component {
     super(props);
     this.state = {};
   }
+
   render() {
     return (
-      <Navbar expand="lg" variant="dark" fixed="top">
-        <Container>
-          <RouterLink to="/">
-            <Navbar.Brand>
-              <img
-                src="\img\brand.png"
-                width="30"
-                height="30"
-                className="d-inline-block align-top"
-                alt="Brand logo"
-              />
-            </Navbar.Brand>
-          </RouterLink>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav">
-            <FontAwesomeIcon icon={faBars} />
-          </Navbar.Toggle>
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="mr-auto">
-              <RouterLink className="nav-link" role="button" to="/">
-                Home
-              </RouterLink>
-              <RouterLink className="nav-link" role="button" to="/projecten">
-                Projecten
-              </RouterLink>
-              <RouterLink className="nav-link" role="button" to="/overmij">
-                Over mij
-              </RouterLink>
-              <RouterLink className="nav-link" role="button" to="/contact">
-                Contact
-              </RouterLink>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
+      <Navbar collapseOnSelect expand="lg" variant="dark" fixed="top">
+        <RouterLink to="/">
+          <Navbar.Brand>
+            <img
+              src="\img\brand.png"
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+              alt="Brand logo"
+            />
+          </Navbar.Brand>
+        </RouterLink>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav">
+          <FontAwesomeIcon icon={faBars} />
+        </Navbar.Toggle>
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link href="#features">Features</Nav.Link>
+            <RouterLink className="nav-link" role="button" to="/">
+              Home
+            </RouterLink>
+            <RouterLink className="nav-link" role="button" to="/projecten">
+              Projecten
+            </RouterLink>
+            <RouterLink className="nav-link" role="button" to="/overmij">
+              Over mij
+            </RouterLink>
+            <RouterLink className="nav-link" role="button" to="/contact">
+              Contact
+            </RouterLink>
+          </Nav>
+        </Navbar.Collapse>
       </Navbar>
     );
   }

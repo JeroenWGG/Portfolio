@@ -6,10 +6,6 @@ p {
 
 /* NAVBAR */
 
-#responsive-navbar-nav:not(.collapsing):not(.show) {
-  height: auto !important;
-}
-
 .navbar {
   border-bottom: #00b285 3px solid;
   background-color: #1c1c1c;
@@ -33,6 +29,10 @@ p {
 
 .navbar-toggler:focus {
   outline: none;
+}
+
+.react-transition {
+  margin-top: 59px;
 }
 
 /* HOME */

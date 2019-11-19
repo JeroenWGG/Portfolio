@@ -7,6 +7,9 @@ import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 import Title from "./Title";
 import Breadcrumbs from "./Breadcrumbs";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 class Contact extends Component {
   constructor(props) {
@@ -33,22 +36,13 @@ class Contact extends Component {
         <Breadcrumbs data={this.state.breadcrumbs} />
         <Title name="Contact" />
         <Container>
-          <Row>
-            <Col>
+          <Row className="pb-2">
+            <Col className="contactDetails">
               <p>
-                Vestibulum tellus ante, ultrices quis laoreet ac, lobortis et
-                turpis. Curabitur lacinia eget justo eget rhoncus. Vestibulum
-                posuere rutrum lorem, ut congue massa. Donec vitae posuere
-                ipsum. Sed vulputate diam nec dignissim imperdiet. Suspendisse
-                sit amet scelerisque sapien, id laoreet lorem. Nulla id urna at
-                urna placerat euismod nec sed ligula. Nunc laoreet, ex sed
-                laoreet rhoncus, ex augue vulputate dui, vel interdum metus arcu
-                ac ante. Donec eros dui, condimentum sit amet commodo vitae,
-                ultrices sed dolor. Ut elementum ipsum eu risus blandit
-                sagittis. Aliquam aliquam, lorem sit amet iaculis porta, odio
-                quam vestibulum turpis, id gravida massa odio a mi. Fusce
-                scelerisque fermentum laoreet. Etiam pulvinar mollis lorem quis
-                varius.
+                Leuk dat je mijn portfolio heb bekeken! Hieronder staan een
+                aantal manieren om contact met mij op te nemen. Ik probeer
+                binnen 24 uur op mailtjes te reageren. Bellen kan natuurlijk
+                ook!
               </p>
             </Col>
           </Row>
@@ -56,32 +50,28 @@ class Contact extends Component {
         <div className="greyContainer pt-4">
           <Container>
             <Row>
-              <Col>
-                <Form>
-                  <Form.Group controlId="formBasicFirstName">
-                    <Form.Label>Voornaam</Form.Label>
-                    <Form.Control type="text" placeholder="Voornaam" />
-                  </Form.Group>
-                  <Form.Group controlId="formBasicLastName">
-                    <Form.Label>Achternaam</Form.Label>
-                    <Form.Control type="text" placeholder="Achternaam" />
-                  </Form.Group>
-                  <Form.Group controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="Email" />
-                  </Form.Group>
-                  <Form.Group controlId="exampleForm.ControlTextarea1">
-                    <Form.Label>Bericht</Form.Label>
-                    <Form.Control
-                      as="textarea"
-                      rows="5"
-                      placeholder="Voer hier je bericht in..."
-                    />
-                  </Form.Group>
-                  <Button variant="primary" type="submit" size="lg" block>
-                    Bericht versturen
-                  </Button>
-                </Form>
+              <Col lg={6} className="contactDetails">
+                {" "}
+                <div>
+                  <FontAwesomeIcon className="mr-4" icon={faEnvelope} />
+                  <a href="mailto:info@jeroenwiersma.com">
+                    info@jeroenwiersma.com
+                  </a>
+                </div>
+                <div>
+                  <br></br> <FontAwesomeIcon className="mr-4" icon={faPhone} />
+                  0616483780<br></br>
+                  <br></br>
+                </div>
+                <div>
+                  <FontAwesomeIcon className="mr-4" icon={faLinkedin} />
+                  <a
+                    className="links"
+                    href="https://www.linkedin.com/in/jeroen-wiersma-840748120/"
+                  >
+                    Jeroen Wiersma
+                  </a>
+                </div>
               </Col>
               <Col md={12} lg={6} className="mt-4">
                 <Image className="contactImage" src="/img/uitsnedenklein.png" />

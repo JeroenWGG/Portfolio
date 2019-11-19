@@ -2,6 +2,16 @@
 
 p {
   font-family: "Raleway", sans-serif !important;
+  font-size: 1.2rem;
+}
+
+a {
+  color: #1c1c1c;
+}
+
+a:hover {
+  color: #00b285;
+  text-decoration: none;
 }
 
 /* NAVBAR */
@@ -306,19 +316,18 @@ body,
 
 /* CONTACT */
 
-.btn-primary {
-  background-color: #00b285;
-  border: #00b285;
-}
-
-.btn-primary:hover {
-  background-color: rgba(0, 178, 133, 0.8);
-}
-
 .contactImage {
   width: 100%;
 }
 
 .greyContainer {
   background-color: #f9f9f9;
+}
+
+.contactDetails {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
 }

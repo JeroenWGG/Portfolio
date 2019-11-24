@@ -55,6 +55,7 @@ class Project1 extends Component {
         <Container className="projecten">
           <Row>
             <Col xs={12}>
+              <p>Datum: 24 november 2019</p>
               <h2>Wat heb ik gedaan?</h2>
               <p>
                 Voor dit project heb ik het customer data platform Datatrics
@@ -97,13 +98,7 @@ class Project1 extends Component {
                 implementatie erg uit waardoor zelfs bijna werd gekozen voor het
                 stopzetten van dit pakket. Uiteindelijk heb ik samen met het
                 marketingteam, Datatrics en Fingerspitz gezorgd voor een
-                succesvolle implementatie van het customer data platform. Ook
-                heb ik tijdens dit project geleerd om data uit grote databases
-                te verbinden en gebruiken voor dynamische content. Ook heb ik
-                hier een stukje ervaring opgedaan in de harde wereld van de
-                retail. Door harde onderhandelingen en duidelijke afspraken kon
-                ik Datatrics overhalen dat een directe communicatielijn nodig
-                was tussen de twee partijen voor een succesvol resultaat.
+                succesvolle implementatie van het customer data platform.
               </p>
             </Col>
           </Row>
@@ -113,6 +108,18 @@ class Project1 extends Component {
             </Col>
             <Col xs={12} lg={6} xl={6} className="mb-4 imageStyle">
               <ZoomImg src={this.state.projectImages[3].src} />
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={12} lg={12} xl={12}>
+              <p>
+                Ook heb ik tijdens dit project geleerd om data uit grote
+                databases te verbinden en gebruiken voor dynamische content. Ook
+                heb ik hier een stukje ervaring opgedaan in de harde wereld van
+                de retail. Door harde onderhandelingen en duidelijke afspraken
+                kon ik Datatrics overhalen dat een directe communicatielijn
+                nodig was tussen de twee partijen voor een succesvol resultaat.
+              </p>
             </Col>
           </Row>
         </Container>

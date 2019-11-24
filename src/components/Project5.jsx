@@ -30,11 +30,11 @@ class Project5 extends Component {
       projectImages: [
         {
           id: 0,
-          src: "https://picsum.photos/1110/700"
+          src: "/img/project-5-1.jpg"
         },
         {
           id: 1,
-          src: "https://picsum.photos/1110/700"
+          src: "/img/project-5-2.jpg"
         }
       ]
     };
@@ -43,56 +43,46 @@ class Project5 extends Component {
     return (
       <div className="react-transition fade-in">
         <Breadcrumbs data={this.state.breadcrumbs} />
-        <Title name="Project 5"></Title>
+        <Title name="Redesign bedankpagina"></Title>
         <Container className="projecten">
           <Row>
-            <Col xs={12} lg={6} xl={6} className="mb-4 imageStyle">
-              <ZoomImg src={this.state.projectImages[0].src} />
-            </Col>
-            <Col xs={12} lg={6} xl={6} className="mb-4">
+            <Col xs={12}>
+              <p>Datum: 24 november 2019</p>
+              <h2>Wat heb ik gedaan?</h2>
               <p>
-                Quisque tincidunt mauris iaculis, suscipit tellus sed, porta
-                nisi. Orci varius natoque penatibus et magnis dis parturient
-                montes, nascetur ridiculus mus. Donec at metus tellus. Mauris
-                sed accumsan ex. Orci varius natoque penatibus et magnis dis
-                parturient montes, nascetur ridiculus mus. Nulla consectetur,
-                sapien nec consectetur fermentum, arcu libero suscipit turpis,
-                id pretium leo metus nec turpis. Maecenas elementum metus neque,
-                id commodo risus placerat non. Pellentesque risus sapien,
-                placerat id semper hendrerit, facilisis et mauris. Aenean dolor
-                enim, sagittis et dolor eu, interdum faucibus velit. Vestibulum
-                ante ipsum primis in faucibus orci luctus et ultrices posuere
-                cubilia Curae; Aliquam varius ex at odio commodo, id porttitor
-                dui rhoncus. Curabitur quis scelerisque elit. Cras vehicula
-                augue vel turpis varius, sit amet tincidunt lacus eleifend.
-                Aliquam ut nisl tortor. Vivamus non tortor tempus, vehicula
-                velit eget, dignissim dui.
+                Voor dit project moest ik samen met de brandmanager van Plein
+                werken aan de sympathiek score. Door het ontwerp van de
+                bedankpagina te veranderen konden we meer nieuwsbrief
+                inschrijvingen binnen halen en verkeer sturen naar de blog van
+                de website.
               </p>
             </Col>
           </Row>
           <Row>
-            <Col xs={12} lg={6} xl={6} className="mb-4">
-              <p>
-                Quisque tincidunt mauris iaculis, suscipit tellus sed, porta
-                nisi. Orci varius natoque penatibus et magnis dis parturient
-                montes, nascetur ridiculus mus. Donec at metus tellus. Mauris
-                sed accumsan ex. Orci varius natoque penatibus et magnis dis
-                parturient montes, nascetur ridiculus mus. Nulla consectetur,
-                sapien nec consectetur fermentum, arcu libero suscipit turpis,
-                id pretium leo metus nec turpis. Maecenas elementum metus neque,
-                id commodo risus placerat non. Pellentesque risus sapien,
-                placerat id semper hendrerit, facilisis et mauris. Aenean dolor
-                enim, sagittis et dolor eu, interdum faucibus velit. Vestibulum
-                ante ipsum primis in faucibus orci luctus et ultrices posuere
-                cubilia Curae; Aliquam varius ex at odio commodo, id porttitor
-                dui rhoncus. Curabitur quis scelerisque elit. Cras vehicula
-                augue vel turpis varius, sit amet tincidunt lacus eleifend.
-                Aliquam ut nisl tortor. Vivamus non tortor tempus, vehicula
-                velit eget, dignissim dui.
-              </p>
+            <Col xs={12} lg={6} xl={6} className="mb-4 imageStyle">
+              <ZoomImg src={this.state.projectImages[0].src} />
             </Col>
             <Col xs={12} lg={6} xl={6} className="mb-4 imageStyle">
               <ZoomImg src={this.state.projectImages[1].src} />
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={12} lg={12} xl={12}>
+              <p>
+                Vergelijkbaar met het productdetailpagina project moest ik hier
+                samenwerken met meerdere afdelingen om mijn functionele
+                ontwerpen werkelijkheid te maken. Als je nu wat besteld bij
+                Plein.nl staat dit ontwerp momenteel live!
+              </p>
+              <h2>Wat heb ik ervan geleerd?</h2>
+              <p>
+                Ik heb tijdens dit project geleerd dat je ook kan testen voor
+                andere doelen dan omzet. Zolang je het maar meetbaar maakt met
+                kwalitatief onderzoek. Ook had ik geleerd om te ontwerpen met
+                automatisering in gedachte. Zo worden de nieuwste blogs
+                automatisch aangevuld in het ontwerp zodat de bedankpagina
+                altijd nieuwe en relevante content heeft voor de klant.
+              </p>
             </Col>
           </Row>
         </Container>

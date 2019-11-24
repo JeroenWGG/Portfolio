@@ -30,11 +30,19 @@ class Project6 extends Component {
       projectImages: [
         {
           id: 0,
-          src: "https://picsum.photos/1110/700"
+          src: "/img/project-6-1.jpg"
         },
         {
           id: 1,
-          src: "https://picsum.photos/1110/700"
+          src: "/img/project-6-2.jpg"
+        },
+        {
+          id: 2,
+          src: "/img/project-6-3.jpg"
+        },
+        {
+          id: 3,
+          src: "/img/project-6-4.jpg"
         }
       ]
     };
@@ -43,56 +51,56 @@ class Project6 extends Component {
     return (
       <div className="react-transition fade-in">
         <Breadcrumbs data={this.state.breadcrumbs} />
-        <Title name="Project 6"></Title>
+        <Title name="Whiteboard animatie"></Title>
         <Container className="projecten">
           <Row>
-            <Col xs={12} lg={6} xl={6} className="mb-4 imageStyle">
-              <ZoomImg src={this.state.projectImages[0].src} />
-            </Col>
-            <Col xs={12} lg={6} xl={6} className="mb-4">
+            <Col xs={12}>
+              <p>Datum: 24 november 2019</p>
+              <h2>Wat heb ik gedaan?</h2>
               <p>
-                Quisque tincidunt mauris iaculis, suscipit tellus sed, porta
-                nisi. Orci varius natoque penatibus et magnis dis parturient
-                montes, nascetur ridiculus mus. Donec at metus tellus. Mauris
-                sed accumsan ex. Orci varius natoque penatibus et magnis dis
-                parturient montes, nascetur ridiculus mus. Nulla consectetur,
-                sapien nec consectetur fermentum, arcu libero suscipit turpis,
-                id pretium leo metus nec turpis. Maecenas elementum metus neque,
-                id commodo risus placerat non. Pellentesque risus sapien,
-                placerat id semper hendrerit, facilisis et mauris. Aenean dolor
-                enim, sagittis et dolor eu, interdum faucibus velit. Vestibulum
-                ante ipsum primis in faucibus orci luctus et ultrices posuere
-                cubilia Curae; Aliquam varius ex at odio commodo, id porttitor
-                dui rhoncus. Curabitur quis scelerisque elit. Cras vehicula
-                augue vel turpis varius, sit amet tincidunt lacus eleifend.
-                Aliquam ut nisl tortor. Vivamus non tortor tempus, vehicula
-                velit eget, dignissim dui.
+                Voor dit project heb ik voordat ik bij Plein werkte een klus
+                voor ze uitgevoerd. Plein was namelijk bezig met de promotie van
+                het dentaal platform. Het dentaal platform was voor tandartsen
+                om producten te bestellen voor hun patiënten.
               </p>
             </Col>
           </Row>
           <Row>
-            <Col xs={12} lg={6} xl={6} className="mb-4">
-              <p>
-                Quisque tincidunt mauris iaculis, suscipit tellus sed, porta
-                nisi. Orci varius natoque penatibus et magnis dis parturient
-                montes, nascetur ridiculus mus. Donec at metus tellus. Mauris
-                sed accumsan ex. Orci varius natoque penatibus et magnis dis
-                parturient montes, nascetur ridiculus mus. Nulla consectetur,
-                sapien nec consectetur fermentum, arcu libero suscipit turpis,
-                id pretium leo metus nec turpis. Maecenas elementum metus neque,
-                id commodo risus placerat non. Pellentesque risus sapien,
-                placerat id semper hendrerit, facilisis et mauris. Aenean dolor
-                enim, sagittis et dolor eu, interdum faucibus velit. Vestibulum
-                ante ipsum primis in faucibus orci luctus et ultrices posuere
-                cubilia Curae; Aliquam varius ex at odio commodo, id porttitor
-                dui rhoncus. Curabitur quis scelerisque elit. Cras vehicula
-                augue vel turpis varius, sit amet tincidunt lacus eleifend.
-                Aliquam ut nisl tortor. Vivamus non tortor tempus, vehicula
-                velit eget, dignissim dui.
-              </p>
+            <Col xs={12} lg={6} xl={6} className="mb-4 imageStyle">
+              <ZoomImg src={this.state.projectImages[0].src} />
             </Col>
             <Col xs={12} lg={6} xl={6} className="mb-4 imageStyle">
               <ZoomImg src={this.state.projectImages[1].src} />
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={12} lg={12} xl={12}>
+              <p>
+                De animatie moest in 91 seconden duidelijk maken wat dit concept
+                precies inhield en staat momenteel nog steeds op de website.
+                Hier een linkje naar het resultaat:{" "}
+                <a href="https://m.youtube.com/watch?v=A3EC66WnXh4">
+                  https://m.youtube.com/watch?v=A3EC66WnXh4
+                </a>
+              </p>
+              <h2>Wat heb ik ervan geleerd?</h2>
+              <p>
+                Ik heb tijdens dit project geleerd om met Adobe After Effects
+                whiteboards animaties te maken. Ook heb ik geleerd om met een
+                grotere organisatie een zelfstandig project uit te voeren. Ook
+                heb ik geleerd dat een kleine samenwerking kan leiden tot veel
+                meer samenwerkingen. Ik heb na deze opdracht namelijk stage
+                gelopen bij dit bedrijf. Na mijn stage was ik aangenomen als
+                Junior Conversie Manager bij Plein.
+              </p>
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={12} lg={6} xl={6} className="mb-4 imageStyle">
+              <ZoomImg src={this.state.projectImages[2].src} />
+            </Col>
+            <Col xs={12} lg={6} xl={6} className="mb-4 imageStyle">
+              <ZoomImg src={this.state.projectImages[3].src} />
             </Col>
           </Row>
         </Container>

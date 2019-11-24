@@ -5,6 +5,8 @@ import Container from "react-bootstrap/container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link as RouterLink } from "react-router-dom";
+import Button from "react-bootstrap/Button";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function Navigation() {
   const [expanded, setExpanded] = useState(false);
@@ -71,6 +73,11 @@ function Navigation() {
               </RouterLink>
             </Nav.Item>
           </Nav>
+          <a href="https://github.com/JeroenWGG?tab=repositories">
+            <Button variant="outline-light">
+              Mijn Github <FontAwesomeIcon icon={faGithub} />
+            </Button>
+          </a>
         </Navbar.Collapse>
       </Container>
     </Navbar>

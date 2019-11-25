@@ -26,6 +26,7 @@ class Skills extends Component {
       development: [
         { id: 0, name: "HTML", number: "100" },
         { id: 1, name: "CSS", number: "100" },
+        { id: 24, name: "JavaScript", number: "75" },
         { id: 2, name: "jQuery", number: "75" },
         { id: 3, name: "Sass", number: "50" },
         { id: 4, name: "NPM", number: "50" },
